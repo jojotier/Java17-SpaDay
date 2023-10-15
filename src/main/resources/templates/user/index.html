@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, </title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+
+</head>
+<body>
+<h1 th:text="'Hello, ' + ${user.username} + '!'"></h1>
+<a th:href="@{/}">Click here for the best services for your skin!</a>
+</body>
+</html>
